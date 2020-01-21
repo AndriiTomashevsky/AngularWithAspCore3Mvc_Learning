@@ -1,0 +1,19 @@
+the decorator, which is used to provide Angular with metadata about a
+building block, performing a role loosely similar to a C# attribute.
+
+an Angular component is equivalent to an ASP.NET Core MVC controller
+
+an Angular component’s template is equivalent to a Razor view.
+
+The key difference is that the MVC
+controllers and views are used to generate a response to an HTTP request, after which they have finished
+their job, but an Angular component and its template have an ongoing responsibility to manage the HTML
+displayed to the user and respond to user interaction and changes to the data model.
+
+Data bindings incorporate data provided by a controller into a template
+
+<tr><th>Name</th><td>{{product?.name}}</td></tr>
+The question mark is the TypeScript safe navigation operator, and it has the same purpose as the
+C# equivalent, preventing the name property from being read when the product property has not been
+initialized.
+
